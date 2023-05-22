@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パーソナルトレーナー｜小川 侑作</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>小川 侑作</h1>
+      <h2>｜ パーソナルトレーナー</h2>
+    </div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="trainer.html">トレーナー</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <li><a href="reserve.html">予約</a></li>
+          <li><a href="contact.html">お問合せ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="top-image">
+      <img src="top.png" alt="あなたの理想を諦めない">
+  </section>
+  <section id="worries">
+    <h1>多くの方は"自分なりの理想"を持っています</h1>
+    <div class="image-container">
+      <div class="image-wrapper">
+        <img src="fat.jpg" alt="Image 1">
+        <div class="image-text">美しくカッコいい身体を</div>
+        <div class="image-text2">手に入れたい！</div>
+      </div>
+      <div class="image-wrapper">
+        <img src="pain.jpg" alt="Image 2">
+        <div class="image-text">慢性的な腰痛・肩コリから</div>
+        <div class="image-text2">解放されたい！</div>
+      </div>
+      <div class="image-wrapper">
+        <img src="active.jpg" alt="Image 3">
+        <div class="image-text">いくつになっても動ける</div>
+        <div class="image-text2">カラダでいたい！</div>
+      </div>
+        <p class="description">"私があなたの理想を叶えます"</p>
+    </div>     
+  </section>
+  <section id="faq">
+    <div class="faq-title">
+      <h2>よくある質問</h2>
+    </div>
+    <div class="accordion-container">
+      <div class="accordion">
+        <div class="accordion-title">Q. パーソナルトレーニングとは何ですか？</div>
+        <div class="accordion-content">
+          <p>A. 専門のトレーナーが個々の目標や体力レベル、体調などに合わせた最適な運動プログラムや食事指導、生活習慣の改善策などを提供するサービスです。</p>         
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-title">Q. 運動が苦手です。パーソナルトレーニングを受けても大丈夫ですか？</div>
+        <div class="accordion-content">
+          <p>はい、運動が苦手な人こそパーソナルトレーニングを受けることをお勧めしています。</p> 
+          <p>パーソナルトレーニングではトレーナーが個々の身体的特徴や運動歴にも考慮し、運動に慣れるまでゆっくりと始めたり、強度や回数を調整いたします。</p>
+          <p>また、トレーナーはモチベーションを高めるためにサポートし、運動が苦手な人でも楽しく取り組むことができるように心掛けています。</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-title">Q. パーソナルトレーニングってどんな人におすすめですか？</div>
+        <div class="accordion-content">
+          <p>A. 絶対的にトレーニング効果を得たい方、カラダを変えたいけど何をすればいいか分からない方</p>
+          <p>１人では運動を継続できない方、予約を入れたりお金を払わないとやる気が出ない方などです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var accordions = document.getElementsByClassName('accordion');
+  
+    for (var i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    }
+  </script>
+  <section class="contact">
+    <h2>お問い合わせ</h2>
+    <p>お問合せはSNSのメッセージ機能でお願いします。<br>些細な事でも構いませんのでお気軽にお問い合わせください。</p>
+      <div class="counseling">
+        <div class="social-icons">
+          <div>
+            <a href="https://www.instagram.com/yu_fitgram/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <span class="span1">｜Instagram</span>
+          </div>
+          <div>
+            <a href="https://line.me/ti/p/313xsrut" target="_blank"><img src="line-icon.png" alt="LINE"></a>
+            <span class="span2">｜LINE</span>
+          </div>
+        </div>        
+      </div>
+  </section>  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="trainer.html">トレーナー</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <li><a href="reserve.html">予約</a></li>
+          <li><a href="contact.html">お問合せ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023 小川 侑作 | パーソナルトレーナー. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // ユーザーエージェントを取得
+    var userAgent = navigator.userAgent.toLowerCase();
+  
+    // スマートフォンかどうかを判定
+    var isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+  
+    // リダイレクト先のURLを設定
+    var redirectUrl = isMobile ? 'https://スマートフォン用のURL' : 'https://PC用のURL';
+  
+    // リダイレクト処理
+    window.location.href = redirectUrl;
+  </script>
+         
+</body>
+</html>
